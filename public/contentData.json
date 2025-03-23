@@ -1,0 +1,50 @@
+{
+    "id": "b66e85a0-5ac9-467e-9c2e-4b763af2f03c",
+    "name": "Tasteology Page",
+    "url": "/",
+    "contentType": "Page",
+    "properties": {
+      "cookingBlock": {
+        "title": "WHAT DOES COOKING MEAN?",
+        "description": "Is it simply applying heat to a food product? A way of making certain food safe to eat? Or a way to create flavour and make food more appealing? This is just part of what Hervé This, the father of molecular gastronomy, has dedicated his life to finding out. We spoke to him to find out what his experiments have told him. And in the process even discovered the secret to cooking the perfect egg...",
+        "noteTitle": "The Perfect Egg",
+        "note": "Keep water between 67 and 68°C for a flavourful, tender yolk.",
+        "images": [
+          {
+            "src": "/assets/pot.png",
+            "alt": "Cooking Pot"
+          },
+          {
+            "src": "/assets/chef.png",
+            "alt": "Chef"
+          },
+          {
+            "src": "/assets/eggs.png",
+            "alt": "/Egg Tray"
+          }
+        ]
+      },
+      "tasteColoursBlock": {
+        "title": "TASTE THE COLOURS",
+        "colors": [
+          {
+            "colorName": "RED",
+            "description": "Red foods remind us of berries and soft fruits, so we anticipate a sweet taste.",
+            "imageSrc": "/assets/red.png"
+          },
+          {
+            "colorName": "Green",
+            "description": "Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours",
+            "imageSrc": "/assets/green.png"
+          },
+          {
+            "colorName": "White",
+            "description": "White foods evoke memories of salt and salty flavours, driving the expectation of a savoury treat.",
+            "imageSrc": "/assets/white.png"
+          }
+        ]
+      }
+    },
+    "children": []
+  }
+  

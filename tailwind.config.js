@@ -3,7 +3,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Open Sans"', 'sans-serif'],
+        openSans: ['"Open Sans"', 'sans-serif'],
       },
     },
   },

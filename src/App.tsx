@@ -1,28 +1,11 @@
 // src/App.tsx
-import React, { useEffect, useState } from 'react';
-import CookingBlock from './components/CookingBlock';
-import TasteColorsBlock from './components/TasteColorsBlock';
-import { TasteologyPageData } from './interfaces/content';
+import React, {  } from 'react';
+import TasteColorsBlock from './components/TasteColors';
+import { useContentData } from './hooks/useContentData';
+import CookingBlock from './components/Cooking';
 
 const App: React.FC = () => {
-  const [data, setData] = useState<TasteologyPageData | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetch('/optimizelyData.json')
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`Failed to fetch data: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((json: TasteologyPageData) => setData(json))
-      .catch((err) => {
-        console.error(err);
-        setError(err.message);
-      });
-  }, []);
-
+  const { data, error } = useContentData();
   if (error) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100 text-red-500">
@@ -41,10 +24,10 @@ const App: React.FC = () => {
   const { cookingBlock, tasteColoursBlock } = data.properties;
 
   return (
-    <div className="min-h-screen bg-black text-white  font-sans font-light">
+    <div className="min-h-screen bg-black text-white font-openSans font-light">
       <main className="max-w-6xl mx-auto p-4">
-        <CookingBlock {...cookingBlock} />
-        <TasteColorsBlock {...tasteColoursBlock} />
+        <CookingBlock data={cookingBlock} />
+        <TasteColorsBlock data={tasteColoursBlock} />
       </main>
     </div>
   );
