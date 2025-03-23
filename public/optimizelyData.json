@@ -1,0 +1,50 @@
+{
+    "id": "b66e85a0-5ac9-467e-9c2e-4b763af2f03c",
+    "name": "Tasteology Page",
+    "url": "/",
+    "contentType": "Page",
+    "properties": {
+      "cookingBlock": {
+        "title": "WHAT DOES COOKING MEAN?",
+        "description": "Is it simply applying heat to a food product? Or is it making certain food palatable and ready to consume? Or is it more? A certain flavour, a little bit of magic or spectacle? This is the essence of cooking—the perfect combination of art and science. This fusion of molecular gastronomy, historical cooking practices, and the bold new world of cuisine pushes us to look for that elusive combination. The simplest things can hide the greatest revelations—the secret to cooking the perfect egg.",
+        "noteTitle": "The Perfect Egg",
+        "note": "Keep water between 67 and 68°C for a flavourful, tender yolk.",
+        "images": [
+          {
+            "src": "http://localhost:5173/assets/pot.png",
+            "alt": "Cooking Pot"
+          },
+          {
+            "src": "http://localhost:5173/assets/chef.png",
+            "alt": "Chef"
+          },
+          {
+            "src": "http://localhost:5173/assets/eggs.png",
+            "alt": "Egg Tray"
+          }
+        ]
+      },
+      "tasteColoursBlock": {
+        "title": "TASTE THE COLOURS",
+        "colors": [
+          {
+            "colorName": "RED",
+            "description": "Red foods remind us of berries and soft fruits, so we anticipate a sweet taste.",
+            "imageSrc": "http://localhost:5173/assets/red.png"
+          },
+          {
+            "colorName": "GREEN",
+            "description": "Green fruits are reminiscent of unripe fruit, promising sour or acid flavours.",
+            "imageSrc": "http://localhost:5173/assets/green.png"
+          },
+          {
+            "colorName": "WHITE",
+            "description": "White evokes those memories of fat and starchy flavours, evoking the expectation of a savoury treat.",
+            "imageSrc": "http://localhost:5173/assets/white.png"
+          }
+        ]
+      }
+    },
+    "children": []
+  }
+  
