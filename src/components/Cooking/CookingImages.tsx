@@ -5,17 +5,17 @@ export interface ImageItem {
   alt: string;
 }
 
-interface CookingBlockImagesProps {
+interface CookingImagesProps {
   images: ImageItem[];
   onImageClick: (src: string, alt: string) => void;
 }
 
-const CookingImages: React.FC<CookingBlockImagesProps> = ({
+const CookingImages: React.FC<CookingImagesProps> = ({
   images,
   onImageClick,
 }) => {
   if (images.length < 3) {
-    console.error("CookingBlockImages requires at least 3 images.");
+    console.error("CookingImages requires at least 3 images.");
     return null;
   }
 
