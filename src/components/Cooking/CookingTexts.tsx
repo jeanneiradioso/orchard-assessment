@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import useInView from "../../hooks/useInView";
 
 interface CookingBlockTextProps {
   title: string;
@@ -13,11 +14,17 @@ const CookingTexts: React.FC<CookingBlockTextProps> = ({
   noteTitle,
   note,
 }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, 0.5);
   return (
-    <div className="md:w-1/3 px-4 py-0 rounded shadow-inner">
+    <div ref={ref} className="md:w-1/3 px-4 py-0 rounded shadow-inner max-h-[600px] overflow-y-auto">
       <h1 className="text-3xl font-bold mb-[55px] relative inline-block">
         {title}
-        <span className="absolute left-0 -bottom-6 block h-[1px] w-0 bg-white animate-expand"></span>
+        <span
+          className={`absolute left-0 -bottom-6 block h-[1px] bg-white transition-all duration-500 ${
+            inView ? "w-full animate-expand" : "w-0"
+          }`}
+        ></span>
       </h1>
       <div className="prose">
         <div className="mb-4">

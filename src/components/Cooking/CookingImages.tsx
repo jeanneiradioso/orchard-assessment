@@ -28,13 +28,13 @@ const CookingImages: React.FC<CookingBlockImagesProps> = ({
   };
 
   return (
-    <div className="md:w-2/3 flex gap-2">
+    <div className="md:w-2/3 flex gap-2 mb-4">
       <div className="w-1/2">
         <a href="#/" onClick={handleAnchorClick}>
           <img
             src={leftMainImage.src}
             alt={leftMainImage.alt}
-            className="w-full h-full object-cover rounded shadow-lg hover:scale-105 transition-transform cursor-pointer w-[372px] h-[600px]"
+            className="w-full h-full object-cover rounded shadow-lg hover:scale-105 transition-transform cursor-pointer !w-[372px] !h-[600px]"
             onClick={() => onImageClick(leftMainImage.src, leftMainImage.alt)}
           />
         </a>
@@ -45,7 +45,7 @@ const CookingImages: React.FC<CookingBlockImagesProps> = ({
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full h-full object-cover rounded shadow-lg hover:scale-105 transition-transform cursor-pointer w-[372px] h-[295px]"
+              className="w-full h-full object-cover rounded shadow-lg hover:scale-105 transition-transform cursor-pointer !w-[372px] !h-[295px]"
               onClick={() => onImageClick(img.src, img.alt)}
             />
           </a>

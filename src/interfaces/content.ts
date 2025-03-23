@@ -1,5 +1,3 @@
-// src/interfaces/ContentInterfaces.ts
-
 export interface ImageItem {
     src: string;
     alt: string;

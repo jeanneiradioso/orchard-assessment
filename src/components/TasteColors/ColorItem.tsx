@@ -18,7 +18,7 @@ const TasteColorItem: React.FC<ColorItemProps> = ({
         <img
           src={item.imageSrc}
           alt={item.colorName}
-          className="rounded hover:scale-110 transition-transform cursor-pointer w-[375px] h-[300px]"
+          className="rounded hover:scale-110 transition-transform cursor-pointer !w-[375px] !h-[300px]"
           onClick={() => onImageClick(item.imageSrc, item.colorName)}
         />
       </a>
