@@ -47,6 +47,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, imageSrc, altText }) => 
         }`}
         onClick={handleModalClick}
       >
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 text-white text-2xl font-bold hover:text-red-400 focus:outline-none"
+          aria-label="Close modal"
+        >
+          &times;
+        </button>
+
         <img
           src={imageSrc}
           alt={altText}
